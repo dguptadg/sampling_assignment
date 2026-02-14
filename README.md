@@ -236,28 +236,3 @@ This comprehensive study yielded several important conclusions for fraud detecti
 4. **Ensemble Methods Excel:** Both Random Forest and Gradient Boosting significantly outperformed single classifiers, highlighting the value of ensemble approaches for imbalanced classification.
 
 5. **Boundary Cleaning is Effective:** Tomek Links, by cleaning decision boundaries, achieved excellent results comparable to pure oversampling methods.
-
-## Recommendations
-
-Based on our findings, we recommend the following approach for credit card fraud detection:
-
-**Primary Recommendation:**
-- Model: Random Forest (M2)
-- Sampling: Random Over Sampling (Sampling1) or Tomek Links (Sampling5)
-- Expected Accuracy: ~99%
-
-**Alternative Approach:**
-- Model: Gradient Boosting (M3)
-- Sampling: ADASYN (Sampling3)
-- Expected Accuracy: ~98.7%
-
-**When to Use Each:**
-- Use Random Forest + Random Over Sampling for maximum simplicity and reliability
-- Use Gradient Boosting + ADASYN when interpretability of feature importance is needed
-- Avoid Random Under Sampling unless constrained by computational resources
-
-3. Tomek, I. (1976). Two Modifications of CNN. IEEE Transactions on Systems, Man, and Cybernetics.
-
-4. Breiman, L. (2001). Random Forests. Machine Learning, 45(1), 5-32.
-
-5. Friedman, J. H. (2001). Greedy Function Approximation: A Gradient Boosting Machine. The Annals of Statistics, 29(5), 1189-1232.
